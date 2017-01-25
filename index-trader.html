@@ -8,9 +8,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href=https://cdn.credit-suisse.com/assets/media/favicons/favicon.ico>
 
-    <title>Trader Page</title>
+    <title>Sales Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,18 +31,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
     <style type="text/css">
-      
+
+
+       * {
+          font-family: 'Open Sans', sans-serif;
+          }
+
         .show {
-  display: block !important;
-}
-.hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-.invisible {
-  visibility: hidden;
-}
+            }
+          display: block !important;
+        }
+        .hidden {
+          display: none !important;
+          visibility: hidden !important;
+        }
+        .invisible {
+          visibility: hidden;
+        }
+        .navbar-inverse {
+
+          background-color:#fff;
+          border-bottom: 1px solid #ccc;
+        }
+      
+
+        .flat {
+            outline: 0;
+            
+        }
       }
     </style>
 
@@ -61,8 +80,10 @@
           </button>
           <a class="navbar-brand" href="#">Credit Suisse</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+
+      <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
@@ -70,7 +91,7 @@
           </ul>
 
           <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
+            <input type="search" class="form-control input-sm" placeholder="Search...">
           </form>
         </div>
       </div>
@@ -80,26 +101,27 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
+            <li class="active"><a href="file:///Users/cyrockij/Desktop/blockchainhack/index-sales.html#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="https://www.bloomberg.com/quote/INDU:IND">Reports</a></li>
+            <li><a href="https://www.bloomberg.com/markets/stocks">Analytics</a></li>
             <li><a href="#">Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
+            <li><a href="https://www.bloomberg.com/">Bloomberg</a></li>
+            <li><a href="https://www.credit-suisse.com/us/en.html">Credit Suisse</a></li>
+            <li><a href="">Groups</a></li>
+            <li><a href="">Messages</a></li>
+          <!--  <li><a href="">More navigation</a></li>-->
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
+            <li><a href="">Favorites</a></li>
+            <li><a href="">Log Out</a></li>
+           <!-- <li><a href="">Another nav item</a></li>-->
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Trader Page</h1>
+          <h1 class="page-header">Sales Page
+            <button type="button" class="btn btn-primary btn-lg" style="float:right" data-toggle = "modal" data-target="#myModal">Create New</button></h1>
             <div class="btn-group btn-group-justified" role="group" aria-label="...">
             <div class="btn-group" role="group">
               <button type="button" class="btn btn-default" id = "Action" onclick = "myfunction()">Action</button>
@@ -125,65 +147,49 @@
                   <th>Company</th>
                   <th>Price</th>
                   <th>Quantity</th>
-                 <!-- <th>Accept</th>
-                  <th>Reject</th>
-                  <th>Amend</th>-->
                 </tr>
               </thead>
               <tbody>
-              <!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                 <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">-->
-                  
                        
                         <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapseOne">
-                          <td>1,001</td>
-                          <td>Lorem</td>
-                          <td>ipsum</td>
-                          <td>dolor</td>
-                          <td>sit</td>
+                          <td>23761</td>
+                          <td>Counterparty 1</td>
+                          <td>Company 2</td>
+                          <td>150.00</td>
+                          <td>100</td>
                           </tr>
-                          <!--</a>-->
-                        <!--</h4>-->
-                        <!--<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                          <div class="panel-body">-->
-                          <tr id="collapseOne" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+
+                          <tr id="collapseOne" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne" style = "float:center">
                             <th><a href="#"><span class = "glyphicon glyphicon-ok" style="color:green"></span></a></th>
                             <th><a href="#"><span class = "glyphicon glyphicon-remove" style="color:red"></span></a></th>
                             <th><a href="#"><span class = "glyphicon glyphicon-edit" style="color:black"></span></a></th>
                             </tr>
-                         <!--< </div>
-                          </div>
-                      </div>
-                          
-                        </div>
-                        </div>-->
+
                         
                 <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapseTwo">
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>34287</td>
+                  <td>Counterparty 3</td>
+                  <td>Company 5</td>
+                  <td>300.00</td>
+                  <td>1000</td>
                 </tr>
                 <tr id="collapseTwo" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
-                            <th><a href="#"><span class = "glyphicon glyphicon-ok" style="color:green"></span></a></th>
-                            <th><a href="#"><span class = "glyphicon glyphicon-remove" style="color:red"></span></a></th>
-                            <th><a href="#"><span class = "glyphicon glyphicon-edit" style="color:black"></span></a></th>
-                            </tr>
+                        <th><a href="#"><span class = "glyphicon glyphicon-ok" style="color:green"></span></a></th>
+                        <th><a href="#"><span class = "glyphicon glyphicon-remove" style="color:red"></span></a></th>
+                        <th><a href="#"><span class = "glyphicon glyphicon-edit" style="color:black"></span></a></th>
+                </tr>
                 <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapseThree">
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
+                  <td>87234</td>
+                  <td>Counterparty 5</td>
+                  <td>Company 1</td>
+                  <td>10.00</td>
+                  <td>500</td>
                 </tr>
               <tr id="collapseThree" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
-                            <th><a href="#"><span class = "glyphicon glyphicon-ok" style="color:green"></span></a></th>
-                            <th><a href="#"><span class = "glyphicon glyphicon-remove" style="color:red"></span></a></th>
-                            <th><a href="#"><span class = "glyphicon glyphicon-edit" style="color:black"></span></a></th>
-                            </tr>
+                        <th><a href="#"><span class = "glyphicon glyphicon-ok" style="color:green"></span></a></th>
+                        <th><a href="#"><span class = "glyphicon glyphicon-remove" style="color:red"></span></a></th>
+                        <th><a href="#"><span class = "glyphicon glyphicon-edit" style="color:black"></span></a></th>
+               </tr>
               </tbody>
             </table>
           </div>
@@ -211,18 +217,18 @@
                     <h4 class="panel-title">-->
                   
                        
-                        <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse6">
-                          <td>1,004</td>
-                          <td>Lorem</td>
-                          <td>ipsum</td>
-                          <td>dolor</td>
-                          <td>sit</td>
+                        <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse4">
+                          <td>21560</td>
+                          <td>Counterparty 4</td>
+                          <td>Company 2</td>
+                          <td>170.00</td>
+                          <td>200</td>
                           </tr>
                           <!--</a>-->
                         <!--</h4>-->
                         <!--<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">-->
-                          <!--<tr id="collapseOne" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+                         <!-- <tr id="collapseOne" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
                             <th><span class = "glyphicon glyphicon-ok" style="color:green"></span></th>
                             <th><span class = "glyphicon glyphicon-remove" style="color:red"></span></th>
                             <th><span class = "glyphicon glyphicon-edit" style="color:black"></span></th>
@@ -235,25 +241,25 @@
                         </div>-->
                         
                 <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse5">
-                  <td>1,005</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>21567</td>
+                  <td>Counterparty 1</td>
+                  <td>Company 5</td>
+                  <td>5.00</td>
+                  <td>1000</td>
                 </tr>
                <!-- <tr id="collapseTwo" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
                             <th><span class = "glyphicon glyphicon-ok" style="color:green"></span></th>
                             <th><span class = "glyphicon glyphicon-remove" style="color:red"></span></th>
                             <th><span class = "glyphicon glyphicon-edit" style="color:black"></span></th>
                             </tr>-->
-                <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse4">
-                  <td>1,006</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
+                <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse6">
+                  <td>27659</td>
+                  <td>Counterparty 5</td>
+                  <td>Company 3</td>
+                  <td>30.00</td>
+                  <td>50</td>
                 </tr>
-             <!-- <tr id="collapseThree" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+              <!--<tr id="collapseThree" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
                             <th><span class = "glyphicon glyphicon-ok" style="color:green"></span></th>
                             <th><span class = "glyphicon glyphicon-remove" style="color:red"></span></th>
                             <th><span class = "glyphicon glyphicon-edit" style="color:black"></span></th>
@@ -286,18 +292,18 @@
                     <h4 class="panel-title">-->
                   
                        
-                        <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse3">
-                          <td>1,007</td>
-                          <td>Lorem</td>
-                          <td>ipsum</td>
-                          <td>dolor</td>
-                          <td>sit</td>
+                        <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse9">
+                          <td>54678</td>
+                          <td>Counterparty 1</td>
+                          <td>Company 3</td>
+                          <td>1.00</td>
+                          <td>600</td>
                           </tr>
                           <!--</a>-->
                         <!--</h4>-->
                         <!--<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">-->
-                         <!-- <tr id="collapseOne" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+                         <!-- <tr id="collapse9" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
                             <th><span class = "glyphicon glyphicon-ok" style="color:green"></span></th>
                             <th><span class = "glyphicon glyphicon-remove" style="color:red"></span></th>
                             <th><span class = "glyphicon glyphicon-edit" style="color:black"></span></th>
@@ -309,24 +315,24 @@
                         </div>
                         </div>-->
                         
-                <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse2">
-                  <td>1,008</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse8">
+                  <td>59487</td>
+                  <td>Counterparty 4</td>
+                  <td>Company 5</td>
+                  <td>500.00</td>
+                  <td>100</td>
                 </tr>
-                <!--<tr id="collapseTwo" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+                <!--<tr id="collapse8" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
                             <th><span class = "glyphicon glyphicon-ok" style="color:green"></span></th>
                             <th><span class = "glyphicon glyphicon-remove" style="color:red"></span></th>
                             <th><span class = "glyphicon glyphicon-edit" style="color:black"></span></th>
                             </tr>-->
-                <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse1">
-                  <td>1,009</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
+                <tr class = "accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-target="#collapse7">
+                  <td>56879</td>
+                  <td>Counterparty 1</td>
+                  <td>Company 3</td>
+                  <td>65.00</td>
+                  <td>150</td>
                 </tr>
              <!-- <tr id="collapseThree" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
                             <th><span class = "glyphicon glyphicon-ok" style="color:green"></span></th>
@@ -346,6 +352,68 @@
         </div>
       </div>
     </div>
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Trade ID</label>
+    <p type="email" class="form-control-static" id="exampleInputEmail1" aria-describedby="emailHelp" onclick="myrandomnumber()">36785</p>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect">Counterparty</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Counterparty 1</option>
+      <option>Counterparty 2</option>
+      <option>Counterparty 3</option>
+      <option>Counterparty 4</option>
+      <option>Counterparty 5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">Company</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Company 1</option>
+      <option>Company 2</option>
+      <option>Company 3</option>
+      <option>Company 4</option>
+      <option>Company 5</option>
+    </select>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Price</label>
+    <input type="counterparty" class="form-control" id="exampleInputPassword1" placeholder="Price">
+  </div>
+  <div class="form-group">
+  <label for="example-number-input" class="form-label">Quantity</label>
+    <input class="form-control" type="number" value="0" id="example-number-input">
+</div>
+  <div class="form-group">
+    <label for="exampleTextarea">Notes</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+
+</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="notifyMe()">SUBMIT</button>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -382,6 +450,14 @@
       $("#active").addClass('hidden');
       $("#submitted").addClass('hidden');
     };
+
+    function myrandomnumber() {
+      var x = document.getElementById("demo")
+      x.innerHTML = Math.floor((Math.random() * 1000000) + 1);
+    };
+
+
+
     
       </script>
    
